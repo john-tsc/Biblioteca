@@ -1,0 +1,29 @@
+BIBLIOTECA
+
+========================REGRAS DE NEGÓCIO========================
+-O aplicativo deverá ser capaz de cadastrar os visitantes para que possam fazer o empréstimo dos livros. Deverá ser possível também fazer a exclusão do visitante.
+
+-Cada visitante deverá obrigatoriamente informar CPF, Endereço, e um número para contato para que seja possível realizar o seu cadastro.
+
+-Cada visitante não poderá pegar emprestado mais do que 05 livros simultaneamente.
+
+-Cada livro poderá ser empretado por um período de 07 dias. Se a renovação for feita no sétimo dia, então o visitante poderá continuar com o empréstimo por mais 07 dias. A renovação não poderá ser feita antes da data de devolução.
+
+-Será punido o visitante que não devolver o(s) livro(s) na data estabelecida.
+	-A punição se dará pelo impedimento de não ser possível alugar livros no período de 07 dias. 
+	-A cada livro em atraso será acrescido 02 dias a mais de punição.
+	-A cada dia após o atraso será acrescido mais um dia de punição.
+		-Ex: 8 dias em atraso (7+1 = 8 dias sem poder alugar um livro).
+
+-O visitante que danificar ou perder o livro deverá arcar com um novo exemplar do mesmo.
+
+-Deverá também ser possível cadastrar ovos livros bem como fazer a exclusão dos mesmos.
+====================================================================
+						BANCO DE DADOS BIBLIOTECA
+
+Passo 1: listar as entidade e os atributos.
+
+-Autor (nome, sobrenome, id).
+-Livro (Título, gênero, autor, id, qtd_página, editora).
+-Editora (nome, cnpj).
+-VISITANTE (nome, sobrenome, cpf, endereço, data_nasc).
